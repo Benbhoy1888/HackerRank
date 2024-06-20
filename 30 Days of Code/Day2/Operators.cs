@@ -30,11 +30,11 @@ class Result
         
         double mealCost = meal_cost;
         double tip = (mealCost/100)*(tip_percent);
-        double tax = (tax_percent/100)*(mealCost);
+        double tax = (tax_percent*mealCost)/(100);
         
         total_cost = (mealCost + tip + tax);
         
-        Console.WriteLine(Math.Round(total_cost, 0));
+        Console.WriteLine(Math.Round(total_cost));
         
         
     }
