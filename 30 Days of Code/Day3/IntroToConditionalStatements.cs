@@ -19,37 +19,37 @@ class Solution
     public static void Main(string[] args)
     {
         int N = Convert.ToInt32(Console.ReadLine().Trim());
-        
-        if (N >=1 && N <=100)
+
+        if (N >= 1 && N <= 100)
         {
-            switch(N % 2)
+            switch (N % 2)
             {
                 case 0:
-                    if (N >=2 && N <=5)
+                    if (N >= 2 && N <= 5)
                     {
                         Console.WriteLine("Not Weird");
-                        break;  
+                        break;
                     }
-                    
-                    else if (N >=6 && N <=20)
+
+                    else if (N >= 6 && N <= 20)
                     {
                         Console.WriteLine("Weird");
-                        break;  
+                        break;
                     }
-                    
+
                     else if (N > 20)
                     {
                         Console.WriteLine("Not Weird");
-                        break;  
+                        break;
                     }
-                    
+
                     break;
-                   
+
                 case 1:
                     Console.WriteLine("Weird");
                     break;
             }
         }
-        
+
     }
 }
