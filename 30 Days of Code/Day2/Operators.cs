@@ -43,7 +43,7 @@ class Result
 
 class Solution
 {
-    public static void Main(string[] args)
+    public static void Main(String[] args)
     {
         double meal_cost = Convert.ToDouble(Console.ReadLine().Trim());
 

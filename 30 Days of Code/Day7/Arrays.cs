@@ -16,9 +16,9 @@ using System;
 
 class Solution
 {
-    public static void Main(string[] args)
+    public static void Main(String[] args)
     {
-        int n = Convert.ToInt32(Console.ReadLine().Trim());
+        int N = Convert.ToInt32(Console.ReadLine().Trim());
 
         List<int> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
         

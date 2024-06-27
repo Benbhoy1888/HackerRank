@@ -16,7 +16,7 @@ using System;
 
 class Solution
 {
-    public static void Main(string[] args)
+    public static void Main(String[] args)
     {
         int n = Convert.ToInt32(Console.ReadLine().Trim());
 
