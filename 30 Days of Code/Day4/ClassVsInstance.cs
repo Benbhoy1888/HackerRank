@@ -10,12 +10,12 @@ class Person
         // Add some more code to run some checks on initialAge
         if (initialAge > 0)
         {
-            age = initialAge;
+            this.age = initialAge;
         }
 
         else
         {
-            age = 0;
+            this.age = 0;
             Console.WriteLine("Age is not valid, setting age to 0.");
         }
     }
@@ -42,7 +42,7 @@ class Person
     public void yearPasses()
     {
         // Increment the age of the person in here
-        age++;
+        this.age++;
     }
 
     static void Main(String[] args)

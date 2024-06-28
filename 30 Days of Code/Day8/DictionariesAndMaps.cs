@@ -15,14 +15,14 @@ class Solution
         
         for (int i = 0; i < N; i++)
         {
-            string[] entry = Console.ReadLine().Split(' ');
-            string name = entry[0];
-            string phoneNumber = entry[1];
+            string[] data = Console.ReadLine().Split(' ');
+            string name = data[0];
+            string phoneNumber = data[1];
             PhoneBook[name] = phoneNumber;
         }
         
-       while ((search = Console.ReadLine()) != null)
-       {
+        while ((search = Console.ReadLine()) != null)
+        {
            if (PhoneBook.TryGetValue(search, out string phoneNumber))
            {
                Console.WriteLine(search + "=" + phoneNumber);
@@ -32,6 +32,6 @@ class Solution
            {
                Console.WriteLine("Not found");
            }
-       }    
+        }    
     }
 }
